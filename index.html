@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Local Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body onload="startTime()">
+
+    <body>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp" style="    background-color: #8bc34a;left: 0%;">
+            <div class="container">
+                <span id="errorMessage"></span>
+                <div class="loader"></div>
+                <div class="inner-container">
+                    <header>
+                        <div class="div-gradient"></div>
+                        <span id="weatherDescription">Mostly Cloudy</span>
+                        <!-- <i class="fa fa-cog settings-icon" id="settings"></i> -->
+                        <!-- Colored FAB button with ripple -->
+                        <button class="settings-icon mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect " id="settings">
+                            <i class="material-icons" style="color: white">cached</i>
+                        </button>
+                        <div class="mdl-tooltip" for="settings">
+                            Change Unit
+                        </div>
+                        <ul class="options">
+                            <li id="farenheit">&degF</li>
+                            <li id="celsius">&degC</li>
+                        </ul>
+                    </header>
+                    <div class="weather-icon">
+                        <i id="weatherIcon" class="wi wi-forecast-io-partly-cloudy-night"></i>
+                    </div>
+                    <div class="temperature-section">
+                        <span id="temperature">18</span><span id="unit">°C</span>
+                    </div>
+                    <footer>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <p id="userLocation">Ahmedabad, India</p>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+            
+            <div id="clockdate">
+                    <div class="clockdate-wrapper">
+                        <div id="clock"></div>
+                        <div id="date"></div>
+                    </div>
+                </div>
+        </div>
+    </body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://use.fontawesome.com/d0c3a87dba.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
