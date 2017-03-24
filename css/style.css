@@ -363,3 +363,11 @@ footer {
     font-family:arial,sans-serif;
     color:#fff;
 }
+
+.fluid-container {
+
+  background-color: #8bc34a;
+}
+.fa{
+  color: #333;
+}

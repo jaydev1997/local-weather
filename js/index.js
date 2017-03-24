@@ -73,7 +73,7 @@ $(document).ready(function() {
   getPosition()
 
   .then(position => $.when(getWeather(position), getLocationName(position)), function(err) {
-    var codePenURL = 'https://codepen.io/ivhed/pen/pbzwJY';
+    var codePenURL = 'https://codepen.io/jaydevs/pen/vxRObV';
     var errorMessage = `${err.message} Try <a href="${codePenURL}" target="_blank">${codePenURL}</a>.`;
     $('#errorMessage').html(errorMessage);
     $('.loader').hide();
